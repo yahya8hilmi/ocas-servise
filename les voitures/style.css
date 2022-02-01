@@ -1,0 +1,134 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+
+body{min-height: 100vh;
+overflow-x: hidden; background:url("back5.jpg");background-attachment: fixed ;background-size: 100% 100%;background-repeat: no-repeat;}
+
+.main {position: absolute;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+width: 100vw;
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+ column-gap: 10px;
+row-gap: 10px; }
+
+
+
+img{width: 300px;
+height: 300px;
+object-fit: cover;
+object-position: center;}
+ul{margin-left: 20%; 
+box-shadow: skyblue;}
+
+li:hover{background-color: skyblue;
+border-radius: 5px;}
+
+.logo {
+    text-decoration: none;
+    color: rgba(72, 72, 167, 0.877);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar{
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+    color: #3a6cf4;
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+#bar:hover,
+#bar.active {
+    color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+    body>nav>div>button:hover,
+    body>nav>div>button:focus {
+        background-color: #3a6cf4;
+    }
+    body>nav>div>button:hover #bar,
+    body>nav>div>button:focus #bar {
+        color: #fff;
+    }
+
+    #navbarSupportContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    #navbarSupportContent > ul > li:nth-child(1) > a{
+        padding: 10px 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
